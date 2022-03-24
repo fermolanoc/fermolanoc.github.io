@@ -1,12 +1,16 @@
+import Header from "./components/Header";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <div class="w-full text-5xl font-extrabold">
-        <span class="bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-emerald-500">
-          Fernando Molano
-        </span>
+      <div className="container max-w-screen-lg mx-auto h-screen">
+        <Header />
+        <div className="text-left text-5xl font-extrabold">
+          <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-emerald-500">
+            Fernando Molano
+          </span>
+        </div>
       </div>
     </div>
   );
