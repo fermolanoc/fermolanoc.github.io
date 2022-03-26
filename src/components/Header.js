@@ -5,7 +5,7 @@ function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center h-24 text-white">
+    <nav className="snap-start w-full flex justify-between items-center h-24 px-4 text-white border-solid border-b-2 border-slate-700">
       <div className="text-2xl font-extrabold">molcadev</div>
       <div
         className="text-lg text-slate-300"
