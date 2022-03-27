@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CgMenuMotion } from "react-icons/cg";
+import { CgMenuMotion, CgClose } from "react-icons/cg";
 
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -11,9 +11,13 @@ function Header() {
         className="text-lg text-slate-300"
         onClick={() => setMobileMenu(!mobileMenu)}
       >
-        <CgMenuMotion size={32} className="sm:hidden" />
+        {mobileMenu === false ? (
+          <CgMenuMotion size={32} className="sm:hidden" />
+        ) : (
+          <CgClose size={32} className="sm:hidden" />
+        )}
         {mobileMenu && (
-          <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-96 flex items-center">
+          <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-screen flex items-center">
             <ul className="flex flex-col h-full mx-auto items-start justify-evenly">
               <li>
                 <a href="#home" className="font-bold text-white">
