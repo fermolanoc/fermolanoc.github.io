@@ -7,6 +7,10 @@ function Work() {
 
   return (
     <div className="w-full grid grid-cols-1 p-4 h-auto gap-6">
+      <div className="w-full -mb-4">
+        <p className="text-3xl font-bold text-white">Work</p>
+        <p className="text-slate-400">Some personal and school projects</p>
+      </div>
       {data.map((project, index) => {
         return (
           <div
