@@ -28,6 +28,10 @@ function Contact() {
           <FiInstagram size={24} />
         </a>
       </div>
+      <div className="text-sm mt-8 text-slate-400">
+        <p> Designed & built by Fernando Molano</p>
+        <p className="text-slate-300">@molcadev</p>
+      </div>
     </div>
   );
 }
