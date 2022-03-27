@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div
       id="home"
-      className="w-full flex flex-col space-y-2 mt-16 px-4 h-screen items-start"
+      className="w-full flex flex-col space-y-2 mt-12 mb-8 px-4 pb-12 h-auto items-start border-solid border-b-2 border-slate-700"
     >
       <div>
         <div className="text-left text-7xl font-extrabold -mb-6">
@@ -97,11 +97,17 @@ function Hero() {
             </div>
           </div>
         </div>
-
         <div className="relative">
           <div className="absolute -top-20 left-10 w-24 h-24 rounded-full bg-teal-600 blur-3xl animate-blob animation-delay-2000"></div>
           <div className="absolute -top-30 left-40 w-24 h-24 rounded-full bg-slate-400 blur-3xl animate-blob animation-delay-4000"></div>
           <div className="absolute -top-40 left-60 w-24 h-24 rounded-full bg-cyan-600 blur-3xl animate-blob"></div>
+        </div>
+        <div className="w-full h-48 flex items-center justify-center">
+          <img
+            className="rounded-full w-auto h-full mt-8 mix-blend-soft-light"
+            src="https://avatars.githubusercontent.com/u/53359507?v=4"
+            alt="Fernando Molano profile picture"
+          />
         </div>
       </div>
     </div>
