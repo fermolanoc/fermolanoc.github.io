@@ -17,7 +17,7 @@ function Header() {
           <CgClose size={32} className="sm:hidden" />
         )}
         {mobileMenu && (
-          <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-screen flex items-center">
+          <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-screen flex items-center z-10">
             <ul className="flex flex-col h-full mx-auto items-start justify-evenly">
               <li>
                 <a href="#home" className="font-bold text-white">

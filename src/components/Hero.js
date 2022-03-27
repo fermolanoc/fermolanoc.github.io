@@ -44,7 +44,7 @@ function Hero() {
             <span
               class={`${
                 summary !== "Extended"
-                  ? "animate-ping absolute top-0 right-0 inline-flex rounded-full h-2 w-2 bg-teal-400"
+                  ? "animate-ping absolute top-0 right-0 rounded-full h-2 w-2 bg-teal-400 z-0"
                   : "animate-none"
               } `}
             ></span>
