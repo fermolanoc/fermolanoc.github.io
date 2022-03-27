@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Hero />
         <Work />
+        <Contact />
       </div>
     </div>
   );

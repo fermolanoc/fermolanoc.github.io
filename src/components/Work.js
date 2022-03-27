@@ -6,7 +6,7 @@ function Work() {
   const data = projects;
 
   return (
-    <div className="snap-center grid grid-cols-1 p-4 h-screen gap-6">
+    <div className="w-full grid grid-cols-1 p-4 h-auto gap-6">
       {data.map((project, index) => {
         return (
           <div

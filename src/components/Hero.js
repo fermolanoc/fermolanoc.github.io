@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div
       id="home"
-      className="snap-start flex flex-col space-y-2 mt-16 px-4 h-screen items-start"
+      className="w-full flex flex-col space-y-2 mt-16 px-4 h-screen items-start"
     >
       <div>
         <div className="text-left text-7xl font-extrabold -mb-6">
