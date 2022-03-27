@@ -2,7 +2,7 @@ function ExtendedSummary() {
   return (
     <div className="mt-10 text-lg space-y-3">
       <p>
-        I am a <span className="text-slate-400"> junior </span>
+        I am a <span className="text-slate-400"> Junior </span>
         <strong className="font-semibold text-teal-400">
           Software Developer
         </strong>{" "}
@@ -10,7 +10,7 @@ function ExtendedSummary() {
       </p>
       <p>
         Main focused on{" "}
-        <span className="text-cyan-500 font-semibold">
+        <span className="text-teal-400 font-semibold">
           {" "}
           Frontend Technologies
         </span>
@@ -18,7 +18,7 @@ function ExtendedSummary() {
       </p>
       <p>
         Becoming{" "}
-        <span className="text-cyan-500 font-semibold">
+        <span className="text-teal-400 font-semibold">
           {" "}
           Mobile Apps Developer{" "}
         </span>
@@ -26,8 +26,8 @@ function ExtendedSummary() {
       </p>
       <p>
         Passion for{" "}
-        <span className="text-cyan-500 font-semibold"> photography </span> and{" "}
-        <span className="text-cyan-500 font-semibold"> tech gadgets</span>.
+        <span className="text-teal-400 font-semibold"> photography </span> and{" "}
+        <span className="text-teal-400 font-semibold"> tech gadgets</span>.
       </p>
       <p>
         <span>Creative writer </span>
