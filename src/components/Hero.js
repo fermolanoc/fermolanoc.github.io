@@ -97,6 +97,12 @@ function Hero() {
             </div>
           </div>
         </div>
+
+        <div className="relative">
+          <div className="absolute -top-20 left-10 w-24 h-24 rounded-full bg-teal-600 blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute -top-30 left-40 w-24 h-24 rounded-full bg-slate-400 blur-3xl animate-blob animation-delay-4000"></div>
+          <div className="absolute -top-40 left-60 w-24 h-24 rounded-full bg-cyan-600 blur-3xl animate-blob"></div>
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ function Contact() {
           <BsArrowDownShort size={24} className="animate-bounce" />
         </span>{" "}
       </p>
-      <div className="mt-4 flex space-x-8 items-center text-slate-400">
+      <div className="mt-2 flex space-x-8 items-center text-slate-400">
         <a href="https://github.com/fermolanoc" target="_blank">
           <FiGithub size={24} />
         </a>
