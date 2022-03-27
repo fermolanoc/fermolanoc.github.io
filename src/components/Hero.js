@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ExtendedSummary from "./ExtendedSummary";
 import ShortSummary from "./ShortSummary";
+import { IoMdArrowDropright } from "react-icons/io";
 
 function Hero() {
   const [summary, setSummary] = useState("Short");
@@ -10,7 +11,7 @@ function Hero() {
       className="snap-start flex flex-col space-y-2 mt-16 px-4 h-screen items-start"
     >
       <div>
-        <div className="text-left text-7xl font-extrabold -mb-8">
+        <div className="text-left text-7xl font-extrabold -mb-6">
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-emerald-500">
             Fernando
           </span>
@@ -48,14 +49,45 @@ function Hero() {
           <p className="mt-12 font-bold bg-clip-text text-transparent bg-teal-400">
             Work with:
           </p>
-          <div className="flex flex-wrap justify-start items-center gap-x-4">
-            <span className="text-indigo-100">#Tailwindcss</span>
-            <span className="text-sky-100">#JavaScript</span>
-            <span className="text-amber-100">#ReactJS</span>
-            <span className="text-yellow-100">#Python</span>
-            <span className="text-lime-100">#Django</span>
-            <span className="text-green-100">#SwiftUI</span>
-            <span className="text-emerald-100">#MySQL</span>
+          <div className="grid grid-cols-2 text-lg">
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">
+                JavaScript <span className="text-slate-300">(ES6+)</span>
+              </span>
+            </div>
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">ReactJS</span>
+            </div>
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">Python</span>
+            </div>
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">Django</span>
+            </div>
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">Tailwindcss</span>
+            </div>
+            <div className="flex items-center justify-start">
+              <span>
+                <IoMdArrowDropright color="#2dd4bf" />
+              </span>
+              <span className="text-white">MySQL</span>
+            </div>
           </div>
         </div>
       </div>

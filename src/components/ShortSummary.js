@@ -1,16 +1,12 @@
 function ShortSummary() {
   return (
-    <div className="mt-10 text-xl">
+    <div className="mt-10 text-lg">
       <p>
-        I am a{" "}
-        <strong className="font-bold bg-clip-text text-transparent bg-teal-400">
+        I am a <span className="text-slate-400"> junior </span>
+        <strong className="font-semibold text-teal-400">
           Software Developer
         </strong>{" "}
-        graduated from{" "}
-        <span className="font-bold bg-clip-text text-transparent bg-teal-400">
-          MCTC
-        </span>{" "}
-        in 2021.
+        specialized in building things for the web.
       </p>
     </div>
   );
