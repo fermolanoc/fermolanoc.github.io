@@ -32,7 +32,13 @@ function Header() {
                 About me
               </li>
               <li>
-                <a href="#work" className="font-bold text-white">
+                <a
+                  href="#work"
+                  className="font-bold text-white"
+                  onClick={() =>
+                    document.getElementById("work").scrollIntoView()
+                  }
+                >
                   03
                 </a>
                 Work

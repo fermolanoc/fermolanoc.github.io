@@ -28,10 +28,10 @@ export const projects = [
     technologies: "JavaScript, HTML, CSS",
     links: [
       {
-        destination: "https://github.com/fermolanoc/simon-game",
+        destination: "https://fermolanoc.github.io/simon-game/",
       },
       {
-        destination: "https://fermolanoc.github.io/simon-game/",
+        destination: "https://github.com/fermolanoc/simon-game",
       },
     ],
   },
@@ -44,6 +44,20 @@ export const projects = [
       },
       {
         destination: "",
+      },
+    ],
+  },
+  {
+    projectName: "Art Practice Tracker",
+    technologies: "Vue JS, HTML, CSS",
+    links: [
+      {
+        destination:
+          "https://fermolanoc.github.io/web-programming/week8/tracker/activity.html",
+      },
+      {
+        destination:
+          "https://github.com/fermolanoc/web-programming/tree/main/week8/tracker",
       },
     ],
   },
