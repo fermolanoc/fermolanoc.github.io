@@ -16,16 +16,28 @@ function Header() {
           <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-96 flex items-center">
             <ul className="flex flex-col h-full mx-auto items-start justify-evenly">
               <li>
-                <span className="font-bold text-white">01</span>Home
+                <a href="#home" className="font-bold text-white">
+                  01
+                </a>
+                Home
               </li>
               <li>
-                <span className="font-bold text-white">02</span>Work
+                <a href="#about-me" className="font-bold text-white">
+                  02
+                </a>
+                About me
               </li>
               <li>
-                <span className="font-bold text-white">03</span>About me
+                <a href="#work" className="font-bold text-white">
+                  03
+                </a>
+                Work
               </li>
               <li>
-                <span className="font-bold text-white">04</span>Contact
+                <a href="#contact" className="font-bold text-white">
+                  04
+                </a>
+                Contact
               </li>
             </ul>
           </div>

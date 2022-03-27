@@ -5,7 +5,10 @@ import ShortSummary from "./ShortSummary";
 function Hero() {
   const [summary, setSummary] = useState("Short");
   return (
-    <div className="snap-start flex flex-col space-y-2 mt-16 px-4 h-screen items-start">
+    <div
+      id="home"
+      className="snap-start flex flex-col space-y-2 mt-16 px-4 h-screen items-start"
+    >
       <div>
         <div className="text-left text-7xl font-extrabold -mb-8">
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-emerald-500">
@@ -21,7 +24,7 @@ function Hero() {
           Software Developer
         </div>
       </div>
-      <div className="text-left text-white space-y-6">
+      <div id="about-me" className="text-left text-white space-y-6">
         <div className="flex w-full items-center justify-around gap-2 mt-14 mb-12">
           <button
             onClick={() => setSummary("Short")}
