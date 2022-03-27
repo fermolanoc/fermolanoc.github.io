@@ -1,47 +1,47 @@
 import { projects } from "../projects";
+import { FiGithub } from "react-icons/fi";
+import { BiLinkExternal } from "react-icons/bi";
 
 function Work() {
   const data = projects;
 
   return (
-    <div className="snap-start grid grid-cols-1 p-4 h-screen">
+    <div className="snap-center grid grid-cols-1 p-4 h-screen gap-6">
       {data.map((project, index) => {
         return (
           <div
             key={index}
-            className="w-full h-64 flex flex-col items-center justify-center gap-6 bg-white py-4 rounded-lg shadow-lg"
+            className="w-full h-64 flex flex-col items-start justify-center px-4 gap-6 bg-slate-800 py-4 rounded-lg shadow-lg drop-shadow-lg text-lg"
           >
-            <div className="flex flex-col items-center justify-around">
-              <p className="text-slate-800 text-xl font-semibold">Project</p>
-              <p className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 to-emerald-500">
+            <div className="flex flex-col items-start justify-around">
+              <p className="text-emerald-400 -mb-1">Project</p>
+              <p className="text-2xl font-bold text-white">
                 {project.projectName}
               </p>
             </div>
-            <div className="flex flex-col items-center justify-around">
-              <p className="text-slate-800 text-xl font-semibold">
+            <div className="flex flex-col items-start justify-around">
+              <p className="text-emerald-400 font-semibold -mb-1">
                 Technologies
               </p>
-              <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-amber-400 to-pink-500">
-                {project.technologies}
-              </p>
+              <p className=" text-white">{project.technologies}</p>
             </div>
-            <div className="flex flex-col items-center justify-around">
-              <p className="text-slate-800 text-xl font-semibold">Links</p>
+            <div className="flex flex-col items-start justify-around">
+              <p className="text-emerald-400 -mb-1">Links</p>
 
-              <div className="w-full flex justify-between items-center gap-4">
+              <div className="w-full flex justify-between items-start gap-4">
                 <a
-                  className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-pink-500 to-violet-500"
-                  href={project.links[0].destination}
-                  target="_blank"
-                >
-                  Live
-                </a>
-                <a
-                  className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-pink-500 to-violet-500"
+                  className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-pink-500 to-violet-500 mt-2"
                   href={project.links[1].destination}
                   target="_blank"
                 >
-                  GitHub
+                  <FiGithub size={24} color="white" />
+                </a>
+                <a
+                  className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-pink-500 to-violet-500 mt-2"
+                  href={project.links[0].destination}
+                  target="_blank"
+                >
+                  <BiLinkExternal size={24} color="white" />
                 </a>
               </div>
             </div>

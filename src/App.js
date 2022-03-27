@@ -6,7 +6,7 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="App">
-      <div className="container max-w-screen-lg mx-auto h-screen snap-y snap-mandatory overflow-scroll">
+      <div className="container max-w-screen-lg mx-auto h-screen snap-y snap-proximity overflow-scroll">
         <Header />
         <Hero />
         <Work />
