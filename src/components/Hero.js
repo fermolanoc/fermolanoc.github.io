@@ -20,7 +20,7 @@ function Hero() {
             Molano
           </span>
         </div>
-        <div class="text-left text-3xl font-light text-white tracking-widest">
+        <div className="text-left text-3xl font-light text-white tracking-widest">
           Software Developer
         </div>
       </div>
