@@ -7,7 +7,7 @@ function Hero() {
   const [summary, setSummary] = useState("Short");
   return (
     <div
-      id="home"
+      id="about-us"
       className="w-full flex flex-col space-y-2 mt-12 mb-8 px-4 pb-12 h-auto items-start border-solid border-b-2 border-slate-700 sm:items-center"
     >
       <div>

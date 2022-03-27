@@ -3,7 +3,10 @@ import { FiGithub, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 function Contact() {
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center my-8 p-4 text-white">
+    <div
+      id="contact"
+      className="w-full h-auto flex flex-col justify-center items-center my-8 p-4 text-white"
+    >
       <p className="text-3xl font-bold">Get in Touch</p>
       <p className="text-slate-400">
         I am currently looking for an opportunity as a Frontend Developer

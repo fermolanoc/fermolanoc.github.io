@@ -4,8 +4,19 @@ import { CgMenuMotion, CgClose } from "react-icons/cg";
 function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
+  const linkToSection = (sectionId) => {
+    const section = document.getElementById(`${sectionId}`);
+    section.scrollIntoView({ behavior: "smooth" });
+    if (mobileMenu) {
+      setMobileMenu(false);
+    }
+  };
+
   return (
-    <nav className="w-full flex justify-between items-center h-24 px-4 text-white border-solid border-b-2 border-slate-700">
+    <nav
+      id="home"
+      className="w-full flex justify-between items-center h-24 px-4 text-white border-solid border-b-2 border-slate-700"
+    >
       <div className="text-2xl font-extrabold">molcadev</div>
       <div className="text-lg text-slate-300">
         {mobileMenu === false ? (
@@ -24,51 +35,57 @@ function Header() {
         {mobileMenu && (
           <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-screen flex items-center z-10">
             <ul className="flex flex-col h-full mx-auto items-start justify-evenly">
-              <li>
-                <a href="#home" className="font-bold text-white">
-                  01
-                </a>
-                Home
+              <li
+                onClick={() => linkToSection("home")}
+                className="cursor-pointer active:border-b-2 active:border-teal-400"
+              >
+                <span className="font-bold text-white">01</span>Home
               </li>
-              <li>
-                <a href="#about-me" className="font-bold text-white">
-                  02
-                </a>
-                About me
+              <li
+                onClick={() => linkToSection("about-us")}
+                className="cursor-pointer active:border-b-2 active:border-teal-400"
+              >
+                <span className="font-bold text-white">02</span>About me
               </li>
-              <li>
-                <a
-                  href="#work"
-                  className="font-bold text-white"
-                  onClick={() =>
-                    document.getElementById("work").scrollIntoView()
-                  }
-                >
-                  03
-                </a>
-                Work
+              <li
+                onClick={() => linkToSection("work")}
+                className="cursor-pointer active:border-b-2 active:border-teal-400"
+              >
+                <span className="font-bold text-white">03</span>Work
               </li>
-              <li>
-                <a href="#contact" className="font-bold text-white">
-                  04
-                </a>
-                Contact
+              <li
+                onClick={() => linkToSection("contact")}
+                className="cursor-pointer active:border-b-2 active:border-teal-400"
+              >
+                <span className="font-bold text-white">04</span>Contact
               </li>
             </ul>
           </div>
         )}
         {!mobileMenu && (
           <ul className="hidden sm:flex items-center space-x-8">
-            <li>
+            <li
+              onClick={() => linkToSection("home")}
+              className="cursor-pointer active:border-b-2 active:border-teal-400"
+            >
               <span className="font-bold text-white">01</span>Home
             </li>
-            <li>
-              <span className="font-bold text-white">02</span>Work
+            <li
+              onClick={() => linkToSection("about-us")}
+              className="cursor-pointer active:border-b-2 active:border-teal-400"
+            >
+              <span className="font-bold text-white">02</span>About me
             </li>
-            <li>
-              <span className="font-bold text-white">03</span>About me
+            <li
+              onClick={() => linkToSection("work")}
+              className="cursor-pointer active:border-b-2 active:border-teal-400"
+            >
+              <span className="font-bold text-white">03</span>Work
             </li>
-            <li>
+            <li
+              onClick={() => linkToSection("contact")}
+              className="cursor-pointer active:border-b-2 active:border-teal-400"
+            >
               <span className="font-bold text-white">04</span>Contact
             </li>
           </ul>

@@ -6,7 +6,7 @@ function Work() {
   const data = projects;
 
   return (
-    <div className="flex flex-col">
+    <div id="work" className="flex flex-col">
       <div className="w-full mb-2">
         <p className="text-3xl font-bold text-white">Work</p>
         <p className="text-slate-400">Some personal and school projects</p>
