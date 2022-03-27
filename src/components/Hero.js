@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div
       id="home"
-      className="w-full flex flex-col space-y-2 mt-12 mb-8 px-4 pb-12 h-auto items-start border-solid border-b-2 border-slate-700"
+      className="w-full flex flex-col space-y-2 mt-12 mb-8 px-4 pb-12 h-auto items-start border-solid border-b-2 border-slate-700 sm:items-center"
     >
       <div>
         <div className="text-left text-7xl font-extrabold -mb-6">
@@ -98,9 +98,9 @@ function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute -top-20 left-10 w-24 h-24 rounded-full bg-teal-600 blur-3xl animate-blob animation-delay-2000"></div>
-          <div className="absolute -top-30 left-40 w-24 h-24 rounded-full bg-slate-400 blur-3xl animate-blob animation-delay-4000"></div>
-          <div className="absolute -top-40 left-60 w-24 h-24 rounded-full bg-cyan-600 blur-3xl animate-blob"></div>
+          <div className="absolute -top-20 left-10 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-20 rounded-full bg-teal-600 blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute -top-30 left-40 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-60 rounded-full bg-slate-400 blur-3xl animate-blob animation-delay-4000"></div>
+          <div className="absolute -top-40 left-60 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-80 rounded-full bg-cyan-600 blur-3xl animate-blob"></div>
         </div>
         <div className="w-full h-48 flex items-center justify-center">
           <img

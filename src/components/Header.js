@@ -5,16 +5,21 @@ function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="snap-start w-full flex justify-between items-center h-24 px-4 text-white border-solid border-b-2 border-slate-700">
+    <nav className="w-full flex justify-between items-center h-24 px-4 text-white border-solid border-b-2 border-slate-700">
       <div className="text-2xl font-extrabold">molcadev</div>
-      <div
-        className="text-lg text-slate-300"
-        onClick={() => setMobileMenu(!mobileMenu)}
-      >
+      <div className="text-lg text-slate-300">
         {mobileMenu === false ? (
-          <CgMenuMotion size={32} className="sm:hidden" />
+          <CgMenuMotion
+            size={32}
+            className="sm:hidden"
+            onClick={() => setMobileMenu(!mobileMenu)}
+          />
         ) : (
-          <CgClose size={32} className="sm:hidden" />
+          <CgClose
+            size={32}
+            className="sm:hidden"
+            onClick={() => setMobileMenu(!mobileMenu)}
+          />
         )}
         {mobileMenu && (
           <div className="absolute top-20 right-0.5 bg-slate-700 w-full h-screen flex items-center z-10">
