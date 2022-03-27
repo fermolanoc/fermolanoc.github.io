@@ -39,8 +39,15 @@ function Hero() {
             onClick={() => setSummary("Extended")}
             className={`${
               summary === "Extended" ? "ring-offset-1" : "ring-offset-0"
-            } px-4 py-2 rounded-md text-teal-400 hover:ring-offset-1 ring-1 ring-blue-300 hover:-translate-y-0.5 ease-linear duration-300`}
+            } px-4 py-2 rounded-md text-teal-400 hover:ring-offset-1 ring-1 ring-blue-300 hover:-translate-y-0.5 ease-linear duration-300 relative`}
           >
+            <span
+              class={`${
+                summary !== "Extended"
+                  ? "animate-ping absolute top-0 right-0 inline-flex rounded-full h-2 w-2 bg-teal-400"
+                  : "animate-none"
+              } `}
+            ></span>
             Extended summary
           </button>
         </div>
