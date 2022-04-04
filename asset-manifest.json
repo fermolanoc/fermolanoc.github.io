@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/molcadev/static/css/main.0013dba5.css",
-    "main.js": "/molcadev/static/js/main.bf938762.js",
+    "main.css": "/molcadev/static/css/main.b9939149.css",
+    "main.js": "/molcadev/static/js/main.13ee0dcc.js",
     "index.html": "/molcadev/index.html",
-    "main.0013dba5.css.map": "/molcadev/static/css/main.0013dba5.css.map",
-    "main.bf938762.js.map": "/molcadev/static/js/main.bf938762.js.map"
+    "main.b9939149.css.map": "/molcadev/static/css/main.b9939149.css.map",
+    "main.13ee0dcc.js.map": "/molcadev/static/js/main.13ee0dcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.0013dba5.css",
-    "static/js/main.bf938762.js"
+    "static/css/main.b9939149.css",
+    "static/js/main.13ee0dcc.js"
   ]
 }
