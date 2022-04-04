@@ -97,7 +97,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative bg-transparent">
           <div className="absolute -top-20 left-10 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-20 rounded-full bg-teal-600 blur-3xl animate-blob animation-delay-2000"></div>
           <div className="absolute -top-30 left-40 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-60 rounded-full bg-slate-400 blur-3xl animate-blob animation-delay-4000"></div>
           <div className="absolute -top-40 left-60 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 md:-top-8 md:left-80 rounded-full bg-cyan-600 blur-3xl animate-blob"></div>
